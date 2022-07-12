@@ -46,7 +46,7 @@ body {
 }
 .main {
     height: 100vh;
-    background: url("/images/Homepage-Background.jpeg");
+    background: url("../images/Homepage-Background.jpeg");
     background-size: cover;
     display: flex;
     flex-direction: column;
