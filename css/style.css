@@ -196,16 +196,44 @@ body {
     color: white;
     margin: 40px;
 }
-.skillsandservicescontainer {
+.grid-container {
     background-size: cover;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 60px;
+    display: grid;
+    column-gap: 30px;
     color: white;
+    grid-template-columns: auto auto auto;
 }
+
+.grid-item {
+    text-align: left;
+  }
+
 .skillsheader {
     font-weight: 700;
     font-size: 30px;
     margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: auto;
+    }
+    .project-container-line-one, 
+    .project-container-line-two {
+        flex-wrap: wrap;
+    }
+   
+    .projectimage-genesis, 
+    .projectimage-reddoor, 
+    .projectimage-travelselect, 
+    .projectimage-indigenous {
+        height: auto;
+        width: 100%;
+    }
+    .bodytitle {
+        font-size: 30px;
+    }
+    .bodytext {
+        font-size: 20px;
+    }
 }
