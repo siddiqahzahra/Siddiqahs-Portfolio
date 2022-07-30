@@ -7,22 +7,106 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Oswald:wght@200&family=Splash&display=swap" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body class="contact-us-body">
   <navbar class="navbar">
     <div class="navbarleft">
-        <a href="/#home"><img src="images/logo.jpeg" alt="logo" class="logo"></a>
-        <a href="/#home" class="navlink">HOME</a>
-        <a href="/#work" class="navlink">WORK</a>
-        <a href="https://docs.google.com/document/d/1Vej-I-kphp5bSfhgczYmZDsOoswzABBG9bk-3_EVW-o/edit?usp=sharing" class="navlink">RESUME</a>
-      </div>
-      <div class="navbarright">
-        <a href="https://ca.linkedin.com/in/siddiqah-zahra" class="navlink">LinkedIn</a>
-        <a href="contactus.html" class="navcontact">Contact Us</a>
-      </div>
+      <a href="/#home"><img src="/images/logo.jpeg" alt="logo" class="logo"></a>
+      <a href="/#work" class="navlink">WORK</a>
+      <a href="/#skills" class="navlink">SKILLS</a>
+      <a href="https://docs.google.com/document/d/1Vej-I-kphp5bSfhgczYmZDsOoswzABBG9bk-3_EVW-o/edit?usp=sharing" class="navlink">RESUME</a>
+    </div>
+    <div class="navbarright">
+      <a href="https://ca.linkedin.com/in/siddiqah-zahra" class="navlink">LinkedIn</a>
+      <a href="/contactus.html" class="navcontact">Contact Us</a>
+    </div>
   </navbar>
-  <div id="home" class="main">
-    <div class="bodytitle">
-      <p> Hi This is the Contact Us Page!</p> 
+  <div class="contact-us-page-container">
+    <div class="contact-us-page">
+      <div class="contact-us-form-container">
+        <div class="contact-heading-container">
+            <h1 class="contact-header">
+              Let's work together
+            </h1>
+            <h3 class="contact-subheader">
+              We’d love to hear from you! Send us a message using the form opposite, or email us. We’d love to hear from you! Send us a message using the form opposite, or email us. 
+            </h3>
+        </div>
+        <form class="contact-form">
+          <div class="contact-form-row">
+            <div class="contact-form-item">
+              <label for="first_name" class="contact-form-label">First Name</label>
+              <input name='first_name' class="contact-form-input"/>
+            </div>
+            <div class="contact-form-item">
+              <label for="last_name" class="contact-form-label">Last Name</label>
+              <input name='last_name' class="contact-form-input"/>
+            </div>
+          </div>
+          <div class="contact-form-row">
+            <div class="contact-form-item">
+              <label for="email" class="contact-form-label">Email</label>
+              <input name="email" class="contact-form-input" type="email"/>
+            </div>
+          </div>
+          <div class="contact-form-row">
+            <div class="contact-form-item">
+              <label for="company" class="contact-form-label">Company</label>
+              <input name='company' class="contact-form-input"/>
+            </div>
+          </div>
+          <div class="contact-form-row">
+            <div class="contact-form-item">
+              <div class="contact-form-label-container">
+                <label for="phone" class="contact-form-label">Phone</label>
+                <p class="contact-form-label-description">Optional</p>
+              </div>
+              
+              <input name="phone" class="contact-form-input" type="phone"/>
+            </div>
+          </div>
+          <div class="contact-form-row">
+            <div class="contact-form-item">
+              <div class="contact-form-label-container">
+                <label for="help_you" class="contact-form-label">How can we help you?</label>
+                <p class="contact-form-label-description">Max. 500 characters</p>
+              </div>
+              
+              <textarea name="help_you" class="contact-form-input" rows="4"></textarea>
+            </div>
+          </div>
+          <div class="contact-form-radio-container">
+            <label for="budget" class="contact-form-label">Expected Budget</label>
+            <div class="contact-form-radio-row">
+              <input type="radio" name="budget" id="less_5k" value="less_5k" class="contact_form_radio_input"/>
+              <label for="less_5k" class="contact-form-radio-label">Less than $5K</label>
+            </div>
+            <div class="contact-form-radio-row">
+              <input type="radio" name="budget" id="5k_to_10k" value="5k_to_10k" class="contact_form_radio_input"/>
+              <label for="5k_to_10k" class="contact-form-radio-label">$5K – $10K</label>
+            </div>
+            <div class="contact-form-radio-row">
+              <input type="radio" name="budget" id="10k_to_25k" value="10k_to_25k" class="contact_form_radio_input"/>
+              <label for="10k_to_25k" class="contact-form-radio-label">$10K – $25K</label>
+            </div>
+            <div class="contact-form-radio-row">
+              <input type="radio" name="budget" id="25k+" value="25k+" class="contact_form_radio_input"/>
+              <label for="25k+" class="contact-form-radio-label">$25k+</label>
+            </div>
+
+          </div>
+          <div class="contact-form-row">
+            <div class="contact-form-item">
+              <label for="how_heard" class="contact-form-label">How did you hear about us?</label>
+              <input name="how_heard" class="contact-form-input"/>
+            </div>
+          </div>
+          <div class="contact-form-actions-row">
+            <button type="submit" class="contact-form-submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="contact-us-page-image">
+      </div>
     </div>
   </div>
 </body>
