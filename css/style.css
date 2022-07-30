@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto';
     height: 100vh;
     margin: 0px;
-    
+
 }
 
 .main-body {
@@ -18,20 +18,25 @@ body {
     margin: 20px;
 
 }
-.navbarleft, .navbarright {
+
+.navbarleft,
+.navbarright {
     display: flex;
 
 }
+
 .navbarright {
     margin-left: auto;
-    
+
 }
+
 .logo {
     height: 40px;
     width: 40px;
     border-radius: 50%;
     cursor: pointer;
 }
+
 .navlink {
     color: white;
     padding: 15px;
@@ -51,6 +56,7 @@ body {
 .navlink:hover {
     color: grey;
 }
+
 .main {
     height: 100vh;
     background: url("../images/Homepage-Background.jpeg");
@@ -138,6 +144,7 @@ body {
     font-weight: 500;
     font-size: 50px;
 }
+
 .bodytext {
     width: 42%;
     font-family: 'Inter';
@@ -146,6 +153,7 @@ body {
     font-size: 20px;
     color: #F9F9F9;
 }
+
 .footer {
     background-size: cover;
     display: flex;
@@ -156,6 +164,7 @@ body {
     padding-top: 15px;
     padding-bottom: 20px;
 }
+
 .footerlinkheader {
     font-family: 'Inter';
     font-style: normal;
@@ -166,35 +175,47 @@ body {
     text-transform: uppercase;
     color: #9CA3AF;
 }
+
 .footerlink {
     margin-top: 15px;
 }
+
 .footermiddle {
     padding-left: 200px;
 }
+
 .socialmediaicons {
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
+
 .socialmedia {
     height: 40px;
     width: 40px;
     border-radius: 50%;
     cursor: pointer;
 }
+
 .footerright {
     padding-left: 400px;
 }
+
 .subscribebutton {
-    width: 112px;
-    height: 40px;
     background: #4F46E5;
     border-radius: 6px;
-    margin-left: 4px;
+    padding: 8px 16px;
     color: white;
+    font-weight: 500;
+    font-size: 14px;
+    transition: 300ms;
+    border: 1px solid transparent;
+    cursor: pointer;
+    height: 34px;
     margin-top: 15px;
-}   
+
+}
+
 .emailinput {
     width: 282px;
     height: 32px;
@@ -205,14 +226,18 @@ body {
     padding: 0px 13px;
     margin-top: 15px;
 }
+
 .footersubscribe {
     display: flex;
     flex-direction: row;
+    gap: 10px
 }
+
 .skillsandservices {
     color: white;
     margin: 40px;
 }
+
 .grid-container {
     background-size: cover;
     display: grid;
@@ -223,7 +248,7 @@ body {
 
 .grid-item {
     text-align: left;
-  }
+}
 
 .skillsheader {
     font-weight: 700;
@@ -235,21 +260,24 @@ body {
     .grid-container {
         grid-template-columns: auto;
     }
-    .project-container-line-one, 
+
+    .project-container-line-one,
     .project-container-line-two {
         flex-wrap: wrap;
     }
-   
-    .projectimage-genesis, 
-    .projectimage-reddoor, 
-    .projectimage-travelselect, 
+
+    .projectimage-genesis,
+    .projectimage-reddoor,
+    .projectimage-travelselect,
     .projectimage-indigenous {
         height: auto;
         width: 100%;
     }
+
     .bodytitle {
         font-size: 30px;
     }
+
     .bodytext {
         font-size: 20px;
     }
@@ -449,7 +477,9 @@ body {
     font-family: 'Roboto';
 }
 
-.contact-form-input:focus, .contact-form-input:hover, .contact-form-input:active {
+.contact-form-input:focus,
+.contact-form-input:hover,
+.contact-form-input:active {
     outline: 1px solid #D1D5DB;
 }
 
@@ -482,7 +512,14 @@ body {
     background: #4F46E5;
 }
 
-.contact-form-submit:focus, .contact-form-submit:active, .contact-form-submit:hover {
+.contact-form-submit:focus,
+.contact-form-submit:active,
+.contact-form-submit:hover {
     outline: 1px solid white;
     background: #3e35ed;
+}
+
+.contact-us-image {
+    max-height: 910px;
+    max-width: 510px;
 }
