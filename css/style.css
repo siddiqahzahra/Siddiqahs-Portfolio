@@ -523,3 +523,7 @@ body {
     max-height: 910px;
     max-width: 510px;
 }
+
+html {
+    scroll-behavior: smooth;
+}
