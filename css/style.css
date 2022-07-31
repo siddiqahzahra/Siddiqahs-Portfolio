@@ -53,7 +53,8 @@ body {
     text-decoration: none;
 }
 
-.navlink:hover {
+.navlink:hover,
+.footerlink:hover {
     color: grey;
 }
 
@@ -178,6 +179,14 @@ body {
 
 .footerlink {
     margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footerleft {
+    display: flex;
+    flex-direction: column;
 }
 
 .footermiddle {
